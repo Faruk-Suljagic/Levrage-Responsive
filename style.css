@@ -12,7 +12,11 @@ body {
 	background-color: rgb(55, 78, 245);
 }
 
-@media only screen and (min-width: 851px) {
+@media only screen and (min-width: 1025px) {
+	.hamburger {
+		display: none;
+		visibility: hidden;
+	}
 	.container {
 		display: flex;
 		flex-direction: column;
@@ -51,7 +55,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		width: 40%;
-		height: 100%;
+		height: 50%;
 		margin: 0 auto;
 		justify-content: flex-end;
 	}
@@ -224,20 +228,50 @@ body {
 			Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	}
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1025px) {
 	.container {
 		display: flex;
 		flex-direction: column;
-		height: 190vh;
+		height: 200vh;
 		max-width: 100%;
 		background-color: rgb(55, 78, 245);
 		margin: 0;
 		color: white;
 	}
-	.logo {
+	.navbar {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: nowrap;
+		margin: 0 auto;
+		width: 100%;
+	}
+	.fa-cloud {
+		font-size: 12vh;
+	}
+	.hamburger {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		pointer-events: all;
+	}
+	.hamburger li {
+		display: flex;
+		flex-direction: column;
+		height: 2px;
+		margin: 4px;
+		width: 40px;
+		background-color: white;
+	}
+	.list {
+		visibility: hidden;
+	}
+	.logo {
+		display: flex;
+		flex: 3;
 		font-size: 30px;
+	}
+	.logo i {
+		display: none;
 	}
 	.list {
 		display: flex;
@@ -334,6 +368,7 @@ body {
 		justify-content: center;
 		border: 1px solid blue;
 		color: gray;
+		margin-bottom: 5%;
 	}
 	.two {
 		display: flex;
@@ -347,7 +382,7 @@ body {
 		justify-content: center;
 	}
 	.offer1 {
-		height: 90%;
+		height: 80%;
 		width: 78%;
 		background-color: transparent;
 	}
@@ -374,6 +409,7 @@ body {
 		margin-right: 10px;
 		color: blue;
 	}
+
 	.btnSpace > button {
 		border-radius: 20px;
 		font-size: 14px;
@@ -387,8 +423,9 @@ body {
 			Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	}
 	.offer2 {
-		height: 90%;
-		width: 78%;
+		padding: 20px;
+		height: 100%;
+		width: 90%;
 	}
 	.offer2 h3 {
 		color: blue;
@@ -418,9 +455,15 @@ body {
 	.checkSpace {
 		margin-top: 10%;
 	}
+	.enterprise {
+		margin-right: 15px;
+	}
 	.cost {
 		display: flex;
 		flex-direction: row;
+		width: 100%;
+		justify-content: center;
+		flex-wrap: wrap;
 		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
 			Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	}
@@ -431,6 +474,7 @@ body {
 		border-radius: 20px;
 		font-size: 14px;
 		padding: 8px 20px;
+		margin-bottom: 3rem;
 		background-color: blue;
 		pointer-events: all;
 		color: white;
